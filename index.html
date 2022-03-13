@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="./assets/vendor/bootstrap.min.css" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/vendor/owl.carousel.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/vendor/owl.carousel.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -164,7 +167,7 @@
               </li>
             </ul>
           </ul>
-          <button class="mobileMenuOpen">
+          <button class="mobileMenuOpen" id="mobileMenuOpen">
             <img
               alt=""
               class="lazyLoad isLoaded"
@@ -172,6 +175,166 @@
             />
           </button>
         </nav>
+
+
+         <nav class="movbile-navbar" id="movbile-navbar">
+          <div>
+            <a href="/" class="logo nuxt-link-active"><img
+                alt=""
+                class="lazyLoad isLoaded"
+                src="./assets/img/logo/logo.svg"
+            /></a>
+          </div>
+          <button id="nev-close" class="close-btn">×</button>
+          <ul role="list" class="mobile-menu">
+            <li class="mobile-menu-list">
+              <a
+                href="#"
+                class="mobile-menu-link nuxt-link-exact-active nuxt-link-active"
+                >Experience Nagad</a
+              >
+            </li>
+           
+            <li class="mobile-menu-list">
+              <a
+                href="/services/service/?service=send-money"
+                class="mobile-menu-link"
+                >Send Money</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="/services/service/?service=cash-out"
+                class="mobile-menu-link"
+                >Cash Out</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="/services/service/?service=mobile-recharge"
+                class="mobile-menu-link"
+                >Mobile Recharge</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="/services/service/?service=emi-payment"
+                class="mobile-menu-link"
+                >EMI Payment</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="/services/service/?service=donation"
+                class="mobile-menu-link"
+                >Donation</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="#"
+                class="mobile-menu-link"
+                >Card to Nagad</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="#"
+                class="mobile-menu-link"
+                >Bank to Nagad</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="#"
+                class="mobile-menu-link"
+                >Merchant Pay</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="#"
+                class="mobile-menu-link"
+                >Cash In</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a
+                href="#"
+                class="mobile-menu-link"
+                >Bill Pay</a
+              >
+             
+            </li>
+            <li class="mobile-menu-list">
+              <a href="#" class="mobile-menu-link"
+                >Profit</a
+              >
+            </li>
+           
+            <li class="mobile-menu-list">
+              <a
+                href="#"
+                target="_blank"
+                class="mobile-menu-link"
+                >Nagad Islamic</a
+              >
+            </li>
+           
+          </ul>
+          <ul role="list" class="downloadBtn-and-lang">
+            <li >
+              <a
+                href="#"
+                target="_blank"
+                class="download-app-btn"
+                >Download App</a
+              >
+            </li>
+            <li >
+              <ul role="list" class="language-switcher">
+                <li >
+                  <a
+  
+                    href="/services"
+                    aria-current="page"
+                    class="lang-btn nuxt-link-exact-active nuxt-link-active active"
+                    >English</a
+                  >
+                </li>
+                <li >
+                  <a href="/bn/services" class="lang-btn"
+                    >বাংলা</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="social-links">
+            <img src="./assets/img/icone/fb.svg" alt="" />
+            <img src="./assets/img/icone/instagram.svg" alt="" />
+            <img src="./assets/img/icone/youtube.svg" alt="" />
+            <img src="./assets/img/icone/linkedin.svg" alt="" />
+          </div>
+       <div class="copy-text text-center">
+            <p class="copyright-text ">
+              © 2022 Nagad All rights reserved
+            </p>
+          </div> 
+          <div class="copy-write text-center">
+            <p>© 2022 Nagad All rights reserved</p>
+          </div>
+          
+        </nav> 
 
         <main class="home-page">
           <section class="cover-slider">
@@ -228,46 +391,61 @@
             </div>
           </section>
         </main>
-        <section class="services-slider">
+        <section>
           <div class="container">
-            <div id="service-carousel" class="service-carousel">
-              <div class="item d-flex">
-                <div class="service-nev-l">
-                  <a href="#"><img src="./assets/img/icone/nav-img.png" alt=""></a>
+            <div class="row">
+              
+            </div>
+          </div>
+        </section>
+        <section class="services-slider m-3">
+          <div class="">
+            <div class="service-section">
+              <div class="services d-flex">
+                
+                <div class="service d-flex">
+
+                  <div class="service-nev-l">
+                    <a href="#"><img src="./assets/img/icone/nav-img.png" alt=""></a>
+                  </div>
+
+                  <div class="service-content">
+                    <a href="#" class="services text-center">
+                      <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
+                      <h5  class="service-title">Cash In</h5>
+                    </a>
+                  </div>
+                  <div class="service-content">
+                    <a href="#" class="services text-center">
+                      <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
+                      <h5  class="service-title">Cash In</h5>
+                    </a>
+                  </div>
+                  <div class="service-content">
+                    <a href="#" class="services text-center">
+                      <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
+                      <h5  class="service-title">Cash In</h5>
+                    </a>
+                  </div>
+                  <div class="service-content">
+                    <a href="#" class="services text-center">
+                      <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
+                      <h5  class="service-title">Cash In</h5>
+                    </a>
+                  </div>
+                  <div class="service-content">
+                    <a href="#" class="services text-center">
+                      <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
+                      <h5  class="service-title">Cash In</h5>
+                    </a>
+                  </div>
+
+                  <div class="service-nev-r">
+                    <a href="#"><img src="./assets/img/icone/nav-img-r.png" alt=""></a>
+                  </div>
                 </div>
-                <div class="service-content">
-                  <a href="#" class="services text-center">
-                    <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
-                    <h5  class="service-title">Cash In</h5>
-                  </a>
-                </div>
-                <div class="service-content">
-                  <a href="#" class="services text-center">
-                    <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
-                    <h5  class="service-title">Cash In</h5>
-                  </a>
-                </div>
-                <div class="service-content service-middle">
-                  <a href="#" class="services text-center">
-                    <div class="service-icon-middle" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
-                    <h5  class="service-title">Cash In</h5>
-                  </a>
-                </div>
-                <div class="service-content">
-                  <a href="#" class="services text-center">
-                    <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
-                    <h5  class="service-title">Cash In</h5>
-                  </a>
-                </div>
-                <div class="service-content">
-                  <a href="#" class="services text-center">
-                    <div class="service-icon" style="background-image: url(./assets/img/icone/cashin.svg);"></div>
-                    <h5  class="service-title">Cash In</h5>
-                  </a>
-                </div>
-                <div class="service-nev-r">
-                  <a href="#"><img src="./assets/img/icone/nav-img-r.png" alt=""></a>
-                </div>
+                
+
               </div>
             </div>
           </div>
@@ -281,93 +459,163 @@
             </div>
             <!---->
             <div id="offerSlider" class="offers owl-carousel owl-dot-none">
-              <div class="item " style="width: 430px; margin: 30px;">
+              <div class="item" style="width: 430px; margin: 30px">
                 <div class="offer-card">
-                  <div class="offer-card-body" style="background-image: url(./assets/img/offer.jpg);">
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="offer-link"></a>
-                  </div> 
+                  <div
+                    class="offer-card-body"
+                    style="background-image: url(./assets/img/offer.jpg)"
+                  >
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="offer-link"
+                    ></a>
+                  </div>
                   <div class="offer-card-footer">
-                    <a href="/campaigns" class="theme-btn">All Offers</a> 
-                    <!----> 
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="theme-btn white">Offer Details</a> 
+                    <a href="/campaigns" class="theme-btn">All Offers</a>
+                    <!---->
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="theme-btn white"
+                      >Offer Details</a
+                    >
                     <!---->
                   </div>
                 </div>
               </div>
-              <div class="item " style="width: 430px; margin: 30px;">
+              <div class="item" style="width: 430px; margin: 30px">
                 <div class="offer-card">
-                  <div class="offer-card-body" style="background-image: url(./assets/img/offer.jpg);">
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="offer-link"></a>
-                  </div> 
+                  <div
+                    class="offer-card-body"
+                    style="background-image: url(./assets/img/offer.jpg)"
+                  >
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="offer-link"
+                    ></a>
+                  </div>
                   <div class="offer-card-footer">
-                    <a href="/campaigns" class="theme-btn">All Offers</a> 
-                    <!----> 
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="theme-btn white">Offer Details</a> 
+                    <a href="/campaigns" class="theme-btn">All Offers</a>
+                    <!---->
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="theme-btn white"
+                      >Offer Details</a
+                    >
                     <!---->
                   </div>
                 </div>
               </div>
-              <div class="item " style="width: 430px; margin: 30px;">
+              <div class="item" style="width: 430px; margin: 30px">
                 <div class="offer-card">
-                  <div class="offer-card-body" style="background-image: url(./assets/img/offer.jpg);">
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="offer-link"></a>
-                  </div> 
+                  <div
+                    class="offer-card-body"
+                    style="background-image: url(./assets/img/offer.jpg)"
+                  >
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="offer-link"
+                    ></a>
+                  </div>
                   <div class="offer-card-footer">
-                    <a href="/campaigns" class="theme-btn">All Offers</a> 
-                    <!----> 
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="theme-btn white">Offer Details</a> 
+                    <a href="/campaigns" class="theme-btn">All Offers</a>
+                    <!---->
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="theme-btn white"
+                      >Offer Details</a
+                    >
                     <!---->
                   </div>
                 </div>
               </div>
-              <div class="item " style="width: 430px; margin: 30px;">
+              <div class="item" style="width: 430px; margin: 30px">
                 <div class="offer-card">
-                  <div class="offer-card-body" style="background-image: url(./assets/img/offer.jpg);">
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="offer-link"></a>
-                  </div> 
+                  <div
+                    class="offer-card-body"
+                    style="background-image: url(./assets/img/offer.jpg)"
+                  >
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="offer-link"
+                    ></a>
+                  </div>
                   <div class="offer-card-footer">
-                    <a href="/campaigns" class="theme-btn">All Offers</a> 
-                    <!----> 
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="theme-btn white">Offer Details</a> 
+                    <a href="/campaigns" class="theme-btn">All Offers</a>
+                    <!---->
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="theme-btn white"
+                      >Offer Details</a
+                    >
                     <!---->
                   </div>
                 </div>
               </div>
-              <div class="item " style="width: 430px; margin: 30px;">
+              <div class="item" style="width: 430px; margin: 30px">
                 <div class="offer-card">
-                  <div class="offer-card-body" style="background-image: url(./assets/img/offer.jpg);">
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="offer-link"></a>
-                  </div> 
+                  <div
+                    class="offer-card-body"
+                    style="background-image: url(./assets/img/offer.jpg)"
+                  >
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="offer-link"
+                    ></a>
+                  </div>
                   <div class="offer-card-footer">
-                    <a href="/campaigns" class="theme-btn">All Offers</a> 
-                    <!----> 
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="theme-btn white">Offer Details</a> 
+                    <a href="/campaigns" class="theme-btn">All Offers</a>
+                    <!---->
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="theme-btn white"
+                      >Offer Details</a
+                    >
                     <!---->
                   </div>
                 </div>
               </div>
-              <div class="item " style="width: 430px; margin: 30px;">
+              <div class="item" style="width: 430px; margin: 30px">
                 <div class="offer-card">
-                  <div class="offer-card-body" style="background-image: url(./assets/img/offer.jpg);">
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="offer-link"></a>
-                  </div> 
+                  <div
+                    class="offer-card-body"
+                    style="background-image: url(./assets/img/offer.jpg)"
+                  >
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="offer-link"
+                    ></a>
+                  </div>
                   <div class="offer-card-footer">
-                    <a href="/campaigns" class="theme-btn">All Offers</a> 
-                    <!----> 
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="theme-btn white">Offer Details</a> 
+                    <a href="/campaigns" class="theme-btn">All Offers</a>
+                    <!---->
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="theme-btn white"
+                      >Offer Details</a
+                    >
                     <!---->
                   </div>
                 </div>
               </div>
-              <div class="item " style="width: 430px; margin: 30px;">
+              <div class="item" style="width: 430px; margin: 30px">
                 <div class="offer-card">
-                  <div class="offer-card-body" style="background-image: url(./assets/img/offer.jpg);">
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="offer-link"></a>
-                  </div> 
+                  <div
+                    class="offer-card-body"
+                    style="background-image: url(./assets/img/offer.jpg)"
+                  >
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="offer-link"
+                    ></a>
+                  </div>
                   <div class="offer-card-footer">
-                    <a href="/campaigns" class="theme-btn">All Offers</a> 
-                    <!----> 
-                    <a href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency" class="theme-btn white">Offer Details</a> 
+                    <a href="/campaigns" class="theme-btn">All Offers</a>
+                    <!---->
+                    <a
+                      href="/campaigns/campaign/?campaign=10-instant-cashback-at-amy-online-travel-agency"
+                      class="theme-btn white"
+                      >Offer Details</a
+                    >
                     <!---->
                   </div>
                 </div>
@@ -423,64 +671,78 @@
             </div>
 
             <div class="steps">
-                <div class="step text-center">
-                  <div class="img">
-                    <img src="./assets/img/icone/icone 3.png" alt="">
-                  </div>
-                  <div class="info">
-                    <h1 class="title">Step 1</h1>
-                    <p>Scan your NID and share necessary information</p>
-                  </div>
+              <div class="step text-center">
+                <div class="img">
+                  <img src="./assets/img/icone/icone 3.png" alt="" />
                 </div>
-                <div class="step">
-                  <div class="img text-center">
-                    <img src="./assets/img/icone/icone 3.png" alt="">
-                  </div>
-                  <div class="info">
-                    <h1 class="title">Step 1</h1>
-                    <p>Scan your NID and share necessary information</p>
-                  </div>
+                <div class="info">
+                  <h1 class="title">Step 1</h1>
+                  <p>Scan your NID and share necessary information</p>
                 </div>
+              </div>
+              <div class="step">
+                <div class="img text-center">
+                  <img src="./assets/img/icone/icone 3.png" alt="" />
+                </div>
+                <div class="info">
+                  <h1 class="title">Step 1</h1>
+                  <p>Scan your NID and share necessary information</p>
+                </div>
+              </div>
 
-                <div class="step">
-                  <div class="img text-center">
-                    <img src="./assets/img/icone/icone 3.png" alt="">
-                  </div>
-                  <div class="info">
-                    <h1 class="title">Step 1</h1>
-                    <p>Scan your NID and share necessary information</p>
-                  </div>
+              <div class="step">
+                <div class="img text-center">
+                  <img src="./assets/img/icone/icone 3.png" alt="" />
                 </div>
-              
+                <div class="info">
+                  <h1 class="title">Step 1</h1>
+                  <p>Scan your NID and share necessary information</p>
+                </div>
+              </div>
             </div>
             <div class="step-buttons d-flex">
-              <a href="" class="btn ">Download App</a>
-              <a href="" class="btn ">Download App</a>
+              <a href="" class="btn">Download App</a>
+              <a href="" class="btn">Download App</a>
             </div>
-            
           </div>
           <div class="container">
             <div class="dfs-title text-center">
               <h2>Nagad - A DFS of the Bangladesh Post Office</h2>
             </div>
             <div class="dfs-img">
-              <img src="./assets/img/dfs-img.jpg" alt="">
+              <img src="./assets/img/dfs-img.jpg" alt="" />
             </div>
             <div class="dfs-info text-center">
-              <p class="">Nagad is an innovative and promising digital financial service of Bangladesh Post Office that embarked upon a glorious journey on March 26, 2019. After its inception, Nagad has financially included about 5.5 crore people only in two and half years.</p>
+              <p class="">
+                Nagad is an innovative and promising digital financial service
+                of Bangladesh Post Office that embarked upon a glorious journey
+                on March 26, 2019. After its inception, Nagad has financially
+                included about 5.5 crore people only in two and half years.
+              </p>
               <a href="#" class="btn btn-primary">Lear More</a>
             </div>
           </div>
           <div class="container mt-5">
-            <div class="row ">
-              <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6 col-sm-5">
                 <div class="safe-digit-img">
-                  <img src="./assets/img/icone/icone 6.png" alt="">
+                  <img src="./assets/img/icone/icone 6.png" alt="" />
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="safe-title"><h1>Safe Digital <br>  Transaction</h1></div>
-                <div class="safe-info"><p>It is important to follow some instructions while using a Nagad Account, and thus all kinds of troubles can be avoided.</p></div>
+              <div class="col-md-6 col-sm-5">
+                <div class="safe-title">
+                  <h1>
+                    Safe Digital <br />
+                    Transaction
+                  </h1>
+                </div>
+                <div class="safe-info">
+                  <p>
+                    It is important to follow some instructions while using a
+                    Nagad Account, and thus all kinds of troubles can be
+                    avoided.
+                  </p>
+                </div>
                 <div class="dfs-info"><a href="">Learn More</a></div>
               </div>
             </div>
@@ -492,35 +754,41 @@
             <div class="nef-img-gallary">
               <div class="images">
                 <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
+                  <img src="./assets/img/img g.png" alt="" />
                 </div>
                 <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
+                  <img src="./assets/img/img g.png" alt="" />
                 </div>
                 <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
+                  <img src="./assets/img/img g.png" alt="" />
                 </div>
                 <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
+                  <img src="./assets/img/img g.png" alt="" />
                 </div>
                 <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
+                  <img src="./assets/img/img g.png" alt="" />
                 </div>
                 <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
+                  <img src="./assets/img/img g.png" alt="" />
                 </div>
                 <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
+                  <img src="./assets/img/img g.png" alt="" />
                 </div>
                 <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
-                </div>    <div class="image">
-                  <img src="./assets/img/img g.png" alt="">
+                  <img src="./assets/img/img g.png" alt="" />
+                </div>
+                <div class="image">
+                  <img src="./assets/img/img g.png" alt="" />
                 </div>
               </div>
             </div>
             <div class="nef-info">
-              <p>Nagad’s services are designed to facilitate convenience and maximum benefit of its users. Nagad is making people's lives easier as they are now making all their transactions with the best benefits.</p>
+              <p>
+                Nagad’s services are designed to facilitate convenience and
+                maximum benefit of its users. Nagad is making people's lives
+                easier as they are now making all their transactions with the
+                best benefits.
+              </p>
             </div>
           </div>
         </section>
@@ -529,40 +797,64 @@
           <div class="footer-inner">
             <div class="footer-logo-social d-flex">
               <div class="logos">
-                <img src="./assets/img/logo/postoffice logo.svg" alt="">
+                <img src="./assets/img/logo/postoffice logo.svg" alt="" />
               </div>
               <div class="social-links">
-                <img src="./assets/img/icone/fb.svg" alt="">
-                <img src="./assets/img/icone/instagram.svg" alt="">
-                <img src="./assets/img/icone/youtube.svg" alt="">
-                <img src="./assets/img/icone/linkedin.svg" alt="">
+                <img src="./assets/img/icone/fb.svg" alt="" />
+                <img src="./assets/img/icone/instagram.svg" alt="" />
+                <img src="./assets/img/icone/youtube.svg" alt="" />
+                <img src="./assets/img/icone/linkedin.svg" alt="" />
               </div>
               <div class="logos">
-                <img src="./assets/img/logo/logo.svg" alt="">
+                <img src="./assets/img/logo/logo.svg" alt="" />
               </div>
             </div>
             <div class="links d-flex">
-              <div class="link d-flex" >
-                <ul role="list" class="quick-links" >
-                  <li ><a href=""  >Compliance</a> <!----></li>
-                  <li ><a href=""  >FAQ</a> <!----></li> 
-                  <li ><a href=""  >Be a Supplier</a> <!----></li>
-                </ul> 
-                <ul role="list" class="quick-links" >
-                  <li ><a href=""  >Media Center</a> <!----></li> 
-                  <li ><a href=""  >Contact Us</a> <!----></li> 
-                  <li ><a href=""  >Locator</a> <!----></li>
-                </ul> 
-                <ul role="list" class="quick-links" >
-                  <li ><a href=""  class="">Terms of Use</a> <!----></li>
+              <div class="link d-flex">
+                <ul role="list" class="quick-links">
+                  <li>
+                    <a href="">Compliance</a>
+                    <!---->
+                  </li>
+                  <li>
+                    <a href="">FAQ</a>
+                    <!---->
+                  </li>
+                  <li>
+                    <a href="">Be a Supplier</a>
+                    <!---->
+                  </li>
+                </ul>
+                <ul role="list" class="quick-links">
+                  <li>
+                    <a href="">Media Center</a>
+                    <!---->
+                  </li>
+                  <li>
+                    <a href="">Contact Us</a>
+                    <!---->
+                  </li>
+                  <li>
+                    <a href="">Locator</a>
+                    <!---->
+                  </li>
+                </ul>
+                <ul role="list" class="quick-links">
+                  <li>
+                    <a href="" class="">Terms of Use</a>
+                    <!---->
+                  </li>
                 </ul>
               </div>
               <div class="download-app">
-                <h4>Download Nagad App</h4> 
-                <!----> 
-                <p>To make your life easier Download Nagad app and access all our services from a single touchpoint.</p> 
-                <!----> 
-                <a href="#" class="btn">Download App</a> 
+                <h4>Download Nagad App</h4>
+                <!---->
+                <p>
+                  To make your life easier Download Nagad app and access all our
+                  services from a single touchpoint.
+                </p>
+                <!---->
+                <a href="#" class="btn">Download App</a>
                 <!---->
               </div>
             </div>
@@ -574,47 +866,43 @@
       </div>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/vendor/bootstrap.bundle.min.js"></script>
     <script src="./assets/vendor/owl.carousel.min.js"></script>
 
     <script>
-      $('#offerSlider').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    responsive:{
-      loop: true,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 2500,
-            item: 4,
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                576: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
-                },
-                1200: {
-                    items: 6
-                }
-            }
-
-    }
-})
-
-
+      $("#offerSlider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          loop: true,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 2500,
+          item: 4,
+          margin: 30,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 2,
+            },
+            768: {
+              items: 3,
+            },
+            1000: {
+              items: 4,
+            },
+            1200: {
+              items: 6,
+            },
+          },
+        },
+      });
     </script>
-   <!-- <script>
+    <!-- <script>
       $('#service-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -659,5 +947,17 @@
     }
 })
     </script> -->
+  <script>
+    document.getElementById("movbile-navbar").style.display = "none";
+
+    document.getElementById('mobileMenuOpen').onclick = function changeContent() {
+        document.getElementById("movbile-navbar").style.display = "block";
+    }
+
+
+  document.getElementById('nev-close').onclick = function changeContent() {
+      document.getElementById("movbile-navbar").style.display = "none";
+  }
+  </script> 
   </body>
 </html>
